@@ -402,11 +402,12 @@ img {
 .contacto__content {
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
+  row-gap: 0.75rem;
 }
 
 .contacto__input {
   padding: 1rem;
+  border-radius: 5px;
 }
 
 .contacto__submit {
