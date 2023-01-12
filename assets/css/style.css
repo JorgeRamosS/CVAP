@@ -170,7 +170,7 @@ img {
 @media screen and (max-width: 767px) {
   .navigation {
     position: fixed;
-    top: -1000%;
+    top: -100%;
     left: 0;
     background-color: var(--body-color);
     width: 100%;
