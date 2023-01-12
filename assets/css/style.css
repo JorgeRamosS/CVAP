@@ -408,7 +408,7 @@ img {
 .contacto__input {
   padding: 1rem;
   border-radius: 5px;
-  border: none;
+  outline: none;
   background-color: var(--white-color);
 }
 
