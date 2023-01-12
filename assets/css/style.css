@@ -408,6 +408,8 @@ img {
 .contacto__input {
   padding: 1rem;
   border-radius: 5px;
+  border: none;
+  background-color: var(--white-color);
 }
 
 .contacto__submit {
