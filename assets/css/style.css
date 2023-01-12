@@ -137,7 +137,7 @@ img {
 .header {
   position: fixed;
   width: 100%;
-  background: transparent;
+  background-color: var(--body-color);
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
