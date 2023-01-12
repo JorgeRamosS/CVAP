@@ -137,11 +137,8 @@ img {
 .header {
   position: fixed;
   width: 100%;
-  background-color: transparent;
+  background-color: var(--first-color);
   z-index: var(--z-fixed);
-  top: 0;
-  left: 0;
-  transition: background 0.4s;
 }
 
 .nav {
@@ -400,10 +397,26 @@ img {
   color: var(--first-color);
 }
 
+/*=============== Contacto ===============*/
+
+.contacto__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.contacto__input {
+  padding: 1rem;
+}
+
+.contacto__submit {
+  margin-top: 1rem;
+}
+
 /*=============== Footer ===============*/
 
 .footer__title {
-  padding-bottom: 1.5rem;
+  padding-block: 1.5rem;
   font-size: var(--small-font-size);
   font-weight: var(--normal-font-size);
 }
