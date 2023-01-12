@@ -225,6 +225,7 @@ img {
 
 .home {
   position: relative;
+  height: 650px;
   padding-top: 5rem;
   overflow: hidden;
 }
