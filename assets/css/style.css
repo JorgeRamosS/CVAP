@@ -227,9 +227,15 @@ img {
 
 .home {
   position: relative;
-  height: 650px;
+  /* height: 650px; */
   padding-top: 5rem;
   overflow: hidden;
+}
+
+.home__columnas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home__title {
@@ -274,9 +280,9 @@ img {
 
 .skills__fila {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
-  align-items: center;
+  column-gap: 2.5rem;
 }
 
 .skills__caja {
@@ -308,15 +314,14 @@ img {
 
 .hobbies__fila {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
-  align-items: center;
-  column-gap: 1rem;
+  column-gap: 2.5rem;
 }
 
 .hobbies__caja {
-  background-color: var(--white-color);
   padding: 1.5rem;
+  background-color: var(--white-color);
   border-radius: 4px;
   transition: transform 0.4s;
 }
@@ -362,6 +367,7 @@ img {
 .proyectos__fila {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .proyectos__caja {
@@ -397,7 +403,8 @@ img {
 }
 
 .proyectos__boton-a:hover {
-  color: var(--first-color);
+  background-color: var(--first-color);
+  color: var(--white-color);
 }
 
 /*=============== Contacto ===============*/
@@ -426,4 +433,56 @@ img {
   padding-block: 1.5rem;
   font-size: var(--small-font-size);
   font-weight: var(--normal-font-size);
+  text-align: center;
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+@media screen and (min-width: 767px) {
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .navigation__list {
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  .skills__logo,
+  .hobbies__logo {
+    font-size: 4rem;
+  }
+
+  .formacion__fila {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2rem;
+  }
+
+  .formacion__logo {
+    width: 300px;
+  }
+
+  .contacto {
+    width: 50%;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .home__columnas {
+    flex-direction: row;
+    column-gap: 5rem;
+  }
+
+  .proyectos__fila {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .contacto {
+    width: 30%;
+    margin-inline: auto;
+  }
 }
