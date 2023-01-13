@@ -1,3 +1,5 @@
+// Credits Bedimcode (https://www.youtube.com/@Bedimcode)
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
