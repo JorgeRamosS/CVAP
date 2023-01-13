@@ -508,3 +508,9 @@ img {
     margin-inline: auto;
   }
 }
+
+@media screen and (min-width: 1340px) {
+  .scrollup {
+    right: 3rem;
+  }
+}
