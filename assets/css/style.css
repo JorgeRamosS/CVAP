@@ -7,13 +7,11 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(219, 69%, 56%);
-  --first-color-alt: hsl(219, 69%, 52%);
   --title-color: hsl(219, 8%, 95%);
   --text-color: hsl(219, 8%, 75%);
   --text-color-light: hsl(219, 4%, 55%);
   --white-color: #fff;
   --body-color: hsl(219, 4%, 4%);
-  --container-color: hsl(219, 4%, 7%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -30,7 +28,6 @@
   --font-semi-bold: 600;
 
   /*========== z index ==========*/
-  --z-tooltip: 10;
   --z-fixed: 100;
 }
 
@@ -153,7 +150,7 @@ img {
 
 .header__logo {
   color: var(--white-color);
-  font-size: 1.25rem;
+  font-size: var(--h3-font-size);
 }
 
 .nav__toggle,
@@ -227,7 +224,6 @@ img {
 
 .home {
   position: relative;
-  /* height: 650px; */
   padding-top: 5rem;
   overflow: hidden;
 }
@@ -434,6 +430,32 @@ img {
   font-size: var(--small-font-size);
   font-weight: var(--normal-font-size);
   text-align: center;
+}
+
+/*=============== SCROLL UP ===============*/
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--white-color);
+  display: inline-flex;
+  padding: 0.45rem;
+  border-radius: 0.45rem;
+  font-size: 1rem;
+  color: var(--body-color);
+  z-index: var(--z-tooltip);
+  transition: bottom 0.3s, transform 0.3s;
+}
+
+.scrollup:hover {
+  transform: translateY(-0.25rem);
+}
+
+/* Show Scroll Up */
+
+.show-scroll {
+  bottom: 3rem;
 }
 
 /*=============== BREAKPOINTS ===============*/
